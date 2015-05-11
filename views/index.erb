@@ -1,0 +1,7 @@
+<h1>Lists:</h1>
+<% @lists.each() do |list| %>
+  <li><%= list.name() %>&nbsp;&nbsp;-<a href="/lists/<%= list.id() %>">&nbsp;&nbsp;View</a></li>
+<% end %>
+
+
+<a href="/lists/new">Create a new list!</a>
